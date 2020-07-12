@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="styles.css">
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+  
+<script src="app.js"></script>
+</head>
+<body>
+<script>
+    // TODO: Replace the following with your app's Firebase project configuration
+    const firebaseConfig = {
+	apiKey: "AIzaSyD4KThNHenjhyVUNUy6sEV5dPd5qLrQVTg",
+	authDomain: "fir-auth-87e5f.firebaseapp.com",
+	databaseURL: "https://fir-auth-87e5f.firebaseio.com",
+	projectId: "fir-auth-87e5f",
+	storageBucket: "fir-auth-87e5f.appspot.com",
+	messagingSenderId: "887246571522",
+	appId: "1:887246571522:web:72119ece05fae39cc83f1b",
+	measurementId: "G-HCJW9WS0GV"
+	};
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+<h2>Login Form</h2>
+
+<div id="form">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+	<!--
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        -->
+    <button type="submit" id="loginbtn" onclick="functionLogin();">Google Log-in</button>
+    <button type="submit" id="logoutbtn" onclick="functionSignOff();">Log-out</button>
+  </div>
+<!--
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>-->
+</div>
+
+</body>
+</html>
